@@ -1,0 +1,47 @@
+.menu-button {
+	font-size: 18px;
+	line-height: 64px;
+	padding: 0 15px;
+	cursor: pointer;
+	transition: color 0.3s;
+	&:hover {
+		color: #00b14f;
+	}
+}
+
+.logo {
+	margin: 15px 0;
+	text-align: center;
+	overflow: hidden;
+	img {
+		width: 120px;
+		height: 47px;
+		object-fit: cover;
+		object-position: left;
+		transition: all 0.15s ease-in-out;
+		transition-delay: 0.05s;
+	}
+}
+
+.user-profile {
+	margin-left: auto;
+	padding-right: 15px;
+	> span {
+		margin-right: 10px;
+	}
+	> button span {
+		color: #000;
+	}
+}
+
+.sidebar {
+	&.ant-layout-sider-collapsed {
+		.logo img {
+			width: 34px;
+		}
+	}
+}
+
+.site-layout .site-layout-background {
+	background: #fff;
+}

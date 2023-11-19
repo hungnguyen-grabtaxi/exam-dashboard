@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/** Custom Ant Components */
+.ant-input {
+	min-height: 32px;
+}
+.ant-layout-sider {
+	background-color: #fff;
+}
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+	border-right: none;
+}
+
+#nprogress {
+	.bar {
+		height: 4px;
+		background-color: #00b14f;
+	}
+}
