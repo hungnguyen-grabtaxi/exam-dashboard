@@ -3,13 +3,13 @@ import { Result } from "antd";
 import underConstructionSVG from "@/assets/images/under-construction.svg";
 import { useCommonStore } from "@/stores/common";
 
-const ListAutomationsPage = function HomePage() {
+const SupportTicketsPage = function HomePage() {
 	const commonStore = useCommonStore();
 
 	useEffect(() => {
 		commonStore.setBreadcrum([
 			{
-				label: "Automations",
+				label: "Support Tickets",
 			},
 		]);
 	}, []);
@@ -29,4 +29,4 @@ const ListAutomationsPage = function HomePage() {
 	);
 };
 
-export default ListAutomationsPage;
+export default SupportTicketsPage;

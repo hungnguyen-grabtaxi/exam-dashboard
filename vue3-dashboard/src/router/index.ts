@@ -12,12 +12,12 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: "/automations",
+    path: "/support-tickets",
     name: "Automation",
-    component: () => import("@/pages/automations/index.vue"),
+    component: () => import("@/pages/support-tickets/index.vue"),
     meta: {
       layout: "Default",
-      menu: "automations",
+      menu: "support-tickets",
     },
   },
   {

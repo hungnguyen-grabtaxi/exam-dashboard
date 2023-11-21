@@ -6,7 +6,7 @@ import { ConfigProvider } from "antd";
 import { observer } from "mobx-react-lite";
 
 const HomePage = lazy(() => import("./pages/Home"));
-const AutomationsPage = lazy(() => import("./pages/Automations"));
+const SupportTicketsPage = lazy(() => import("./pages/SupportTickets"));
 
 const App = observer(() => {
 	return (
@@ -27,9 +27,9 @@ const App = observer(() => {
 							</Suspense>
 						</Route>
 
-						<Route path="/automations">
+						<Route path="/support-tickets">
 							<Suspense>
-								<AutomationsPage />
+								<SupportTicketsPage />
 							</Suspense>
 						</Route>
 

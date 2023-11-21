@@ -8,7 +8,7 @@ import { useCommonStore } from "@/stores/common";
 const commonStore = useCommonStore();
 commonStore.setBreadcrum([
     {
-        label: "Automations",
+        label: "Support Tickets",
     },
 ]);
 

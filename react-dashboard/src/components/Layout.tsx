@@ -3,10 +3,10 @@ import { observer } from "mobx-react-lite";
 import { Link, useLocation } from "wouter";
 import {
 	PieChartOutlined,
-	SettingOutlined,
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
 	HomeOutlined,
+	QuestionCircleOutlined,
 } from "@ant-design/icons";
 import {
 	ConfigProvider,
@@ -51,9 +51,9 @@ const AppLayout = observer((props: LayoutProps) => {
 	const menuItems: MenuItem[] = [
 		getMenuItem(<Link href="/">Dashboard</Link>, "/", <PieChartOutlined />),
 		getMenuItem(
-			<Link href="/automations">Automations</Link>,
-			"/automations",
-			<SettingOutlined />
+			<Link href="/support-tickets">Support Tickets</Link>,
+			"/support-tickets",
+			<QuestionCircleOutlined />
 		),
 	];
 
@@ -111,10 +111,6 @@ const AppLayout = observer((props: LayoutProps) => {
 								)
 							}
 							onClick={() => setCollapsed(!collapsed)}
-							style={{
-								width: 64,
-								height: 64,
-							}}
 						/>
 					</Header>
 					<Content

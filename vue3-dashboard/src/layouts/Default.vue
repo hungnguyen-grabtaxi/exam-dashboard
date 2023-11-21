@@ -29,11 +29,11 @@
                     </router-link>
                 </a-menu-item>
                 <a-menu-item
-                    key="automations"
+                    key="support-tickets"
                 >
-                    <router-link to="/automations">
-                        <cloud-upload-outlined />
-                        <span>Automations</span>
+                    <router-link to="/support-tickets">
+                        <question-circle-outlined />
+                        <span>Support Tickets</span>
                     </router-link>
                 </a-menu-item>
             </a-menu>
@@ -104,7 +104,6 @@
     </a-layout>
 </template>
 
-
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
 import { storeToRefs } from 'pinia';
@@ -113,7 +112,7 @@ import {
     PieChartOutlined,
     MenuUnfoldOutlined,
     MenuFoldOutlined,
-    CloudUploadOutlined,
+    QuestionCircleOutlined,
     HomeOutlined,
     LogoutOutlined,
 } from '@ant-design/icons-vue';
@@ -130,13 +129,6 @@ const menuActiveRoutes = computed(() => [currentRoute.value.meta.menu]);
 
 function onToggleSidebar() {
     collapsed.value = !collapsed.value;
-
-    const rootElement = document.querySelector(':root') as HTMLElement;
-    if (collapsed.value) {
-        rootElement.style.setProperty('--sidebar-width', '80px');
-    } else {
-        rootElement.style.setProperty('--sidebar-width', '200px');
-    }
 }
 </script>
 
